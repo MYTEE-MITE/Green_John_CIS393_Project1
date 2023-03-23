@@ -1,0 +1,247 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.piece > h3 {
+    text-align: center;
+}
+
+.divider > h1 {
+    text-shadow: 0 0 10px rgb(112, 112, 112)
+}
+
+.scroll {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    color: black;
+    height: 40px;
+    border-radius: 5px;
+    width: 70px;
+    background: radial-gradient(white, rgb(219, 219, 71));
+}
+
+.nav-button {
+    color: black;
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    background: radial-gradient(white, rgb(219, 219, 71));
+}
+
+.nav-button:hover, .scroll:hover {
+    background: radial-gradient(rgb(39, 143, 26), rgb(39, 143, 26));
+    cursor: pointer;
+    scale: 90%;
+    color: white;
+    transition: all 100ms ease-in-out;
+}
+
+.divider {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    background-color: white !important;
+    border: none !important;
+}
+
+.piece, .my-piece {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    box-shadow: 5px 5px 5px green inset, -5px -5px 5px rgb(0, 46, 0) inset;
+}
+
+.name, .my-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    box-shadow: 5px 5px 5px green inset, -5px -5px 5px rgb(0, 46, 0) inset;
+}
+
+.desc, .my-desc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    box-shadow: 5px 5px 5px green inset, -5px -5px 5px rgb(0, 46, 0) inset;
+}
+
+.desc > p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+
+.comm {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    box-shadow: 5px 5px 5px green inset, -5px -5px 5px rgb(0, 46, 0) inset;
+}
+
+.comm-Box {
+    width: 100%
+}
+
+label {
+    width: auto;
+    display: inline;
+    text-align: right;
+    margin-right: 4%;
+}
+
+span {
+    white-space: nowrap;
+}
+
+.name-field {
+    text-align: right;
+}
+
+fieldset > legend {
+    text-align: left;
+}
+
+fieldset > p{
+    text-align: left;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 60%;
+    padding: 3%;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin: 3% 0% 3% 0%
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+input[type=radio] {
+    appearance: none;
+}
+
+input[type=radio] + label::before {
+   content: "\00a0";
+   border-radius: 10px;
+   display: inline-block;
+   width: .5em;  height: .5em; 
+   margin: 10px;
+   background-color: #ffd445;
+   border: 0.125em solid rgb(255, 190, 68);
+   cursor: pointer;
+}
+
+input[type=radio]:checked + label::before {
+    background: green;
+ }
+ input[type=radio]:focus + label::before {
+    box-shadow: 0 0 0 1px #000000;
+ }
+ 
+ 
+
+.grid > div {
+    background: lightgreen;
+    border: 3px solid green;
+    padding: 5%;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.center {
+    text-align: center;
+    font-size: 20px;
+}
+
+.art-title {
+    font-size: 25px;
+}
+
+.author {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.fine-details {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    flex: 0 1 70%;
+    background: white;
+    border: 5px solid darkgreen;
+}
+
+main > p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    flex: 0 1 20%;
+    background: linear-gradient(to right, white, green);
+    border: 5px solid darkgreen;
+}
+
+header > p {
+    font-size: 25px;
+}
+
+nav {
+    flex: 0 1 20%;
+    background: lightgreen;
+    border-left: 5px solid darkgreen;
+    border-right: 5px solid darkgreen;
+}
+
+aside {
+    flex: 0 1 30%;
+    text-align: center;
+    background: lightgoldenrodyellow;
+    border-right: 5px solid darkgreen;
+    border-bottom: 5px solid darkgreen;
+    border-top: 5px solid darkgreen;
+}
+
+aside > p {
+    font-size: 20px;
+}
+
+footer {
+    flex: 0 1 20%;
+    background: green;
+    border-left: 5px solid darkgreen;
+    border-right: 5px solid darkgreen;
+    border-bottom: 5px solid darkgreen;
+}
