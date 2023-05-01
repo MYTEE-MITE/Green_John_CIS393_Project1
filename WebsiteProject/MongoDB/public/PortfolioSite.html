@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <script src="PortfolioSite.js"></script>
+        <link href="PortfolioSite.css" rel="stylesheet">
+    </head>
+
+    <button type="button" class="scroll" id="scroll">
+        <strong>Back to Top</strong>
+    </button>
+
+    <body>
+        <header class="container">
+            <table>
+                <tr>
+                    <td width="15%"><img src="binder.png" alt="Binder" width="100%"></td>
+                    <td width="5%"></td>
+                    <td><h1>Portfolio Share</h1>
+                        <h3>Upload your artwork and comment on other artist's pieces!</h3></td>
+                </tr>
+            </table>      
+        </header>
+
+        <nav class="container">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <button type="button" class="nav-button" id="nav1" onclick="scrollto1()">
+                            <strong>Submission #1</strong>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="nav-button" id="nav2" onclick="scrollto2()">
+                            <strong>Submission #2</strong>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="nav-button" id="nav3" onclick="scrollto3()">
+                            <strong>Submission #3</strong>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="nav-button" id="nav4" onclick="scrollto4()">
+                            <strong>Submission #4</strong>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="nav-button" id="nav5" onclick="scrollto5()">
+                            <strong>Submission #5</strong>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="nav-button" id="nav6" onclick="scrollto6()">
+                            <strong>Your Submission</strong>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+        <div class="container">
+            <main>
+                <h2>Top 5 Works of the Week</h2>
+                <p class="center">Every week, 5 pieces will be chosen to be featured on our homepage!<br>
+                Below are this week's winners!</p>
+
+                <div class="grid">
+
+                    <div class="divider" id="sub1">
+                        <h1>-----Submission 1-----</h1>
+                    </div>
+
+                    <div class="piece"><img src="Impressionism.jpg" alt="Impressionism piece" width="50%"></div>
+
+                    <div class="name"><h3 class="art-title"><em>Warmth of Midnight</em></h3>
+                    <p class="author">by Shibble Wimble</p>
+                    <p class="fine-details">Category: Impressionism</p></div>
+
+                    <div class="desc">
+                        <p>This piece is meant to contrast the typical cold associated with midnight by
+                            mixing in warm colors. It was made using oil paints on a canvas and is
+                            currently being displayed in a studio in New York.</p>
+                    </div>
+
+                    <div class="comm">
+                        <table width="100%">
+                            <tr height="10%">
+                                <td width="100%">Comments:<br><br></td>
+                            </tr>
+                            <tr height="50%">
+                                <td></td>
+                            </tr>
+                            <tr height="40%">
+                                <td width="100%">
+                                    <textarea class="comm-Box" name="comm1" id="comm1" rows="4" placeholder="Submit a comment..."></textarea>
+                                     <input type="submit" class="comm-Sub">
+                                </td>
+                            </tr>
+                        </table> 
+                    </div>
+
+                </div>
+
+                <div class="grid">
+
+                    <div class="divider" id="sub2">
+                        <h1>-----Submission 2-----</h1>
+                    </div>
+
+                    <div class="piece"><img src="Cubism.jpg" alt="Cubism piece" width="50%"></div>
+
+                    <div class="name"><h3 class="art-title"><em>Catism</em></h3>
+                    <p class="author">by Jaquantavius Quimble</p>
+                    <p class="fine-details">Category: Cubism</p></div>
+
+                    <div class="desc">
+                        <p>I hate my cat, I made this to make fun of him.</p>
+                    </div>
+
+                    <div class="comm">
+                        <table width="100%">
+                            <tr height="10%">
+                                <td width="100%">Comments:<br><br></td>
+                            </tr>
+                            <tr height="50%">
+                                <td></td>
+                            </tr>
+                            <tr height="40%">
+                                <td width="100%">
+                                    <textarea class="comm-Box" name="comm2" id="comm2" rows="4" placeholder="Submit a comment..."></textarea>
+                                     <input type="submit" class="comm-Sub">
+                                </td>
+                            </tr>
+                        </table> 
+                    </div>
+
+                </div>
+
+                <div class="grid">
+
+                    <div class="divider" id="sub3">
+                        <h1>-----Submission 3-----</h1>
+                    </div>
+
+                    <div class="piece"><img src="Color_Splash.jpg" alt="Abstract piece" width="50%"></div>
+
+                    <div class="name"><h3 class="art-title"><em>Color Vomit</em></h3>
+                    <p class="author">by Rainbow McGee</p>
+                    <p class="fine-details">Category: Abstract</p></div>
+
+                    <div class="desc">
+                        <p>The meaning of this piece is up to your interpretation. It was created by drizzling
+                           various colors and shades of special acrylic paint on a black canvas. The paint was 
+                           then put under a black light, and the colors popped!
+                        </p>
+                    </div>
+
+                    <div class="comm">
+                        <table width="100%">
+                            <tr height="10%">
+                                <td width="100%">Comments:<br><br></td>
+                            </tr>
+                            <tr height="50%">
+                                <td></td>
+                            </tr>
+                            <tr height="40%">
+                                <td width="100%">
+                                    <textarea class="comm-Box" name="comm3" id="comm3" rows="4" placeholder="Submit a comment..."></textarea>
+                                     <input type="submit" class="comm-Sub">
+                                </td>
+                            </tr>
+                        </table> 
+                    </div>
+
+                </div>
+
+                <div class="grid">
+
+                    <div class="divider" id="sub4">
+                        <h1>-----Submission 4-----</h1>
+                    </div>
+
+                    <div class="piece"><img src="Temple.jpg" alt="Other piece" width="50%"></div>
+
+                    <div class="name"><h3 class="art-title"><em>The Sanctum</em></h3>
+                    <p class="author">by Lara Croft</p>
+                    <p class="fine-details">Category: Other</p></div>
+
+                    <div class="desc">
+                        <p>A recreation of a tomb I recently explored in the deep jungle. I wanted to
+                           imagine what it would have looked like in its prime, so I did a little
+                           painting >:)
+                        </p>
+                    </div>
+
+                    <div class="comm">
+                        <table width="100%">
+                            <tr height="10%">
+                                <td width="100%">Comments:<br><br></td>
+                            </tr>
+                            <tr height="50%">
+                                <td></td>
+                            </tr>
+                            <tr height="40%">
+                                <td width="100%">
+                                    <textarea class="comm-Box" name="comm4" id="comm4" rows="4" placeholder="Submit a comment..."></textarea>
+                                     <input type="submit" class="comm-Sub">
+                                </td>
+                            </tr>
+                        </table> 
+                    </div>
+
+                </div>
+
+                <div class="grid">
+
+                    <div class="divider" id="sub5">
+                        <h1>-----Submission 5-----</h1>
+                    </div>
+
+                    <div class="piece"><img src="Landscape.jpg" alt="Other piece #2" width="50%"></div>
+
+                    <div class="name"><h3 class="art-title"><em>Mountain Valley</em></h3>
+                    <p class="author">by Luv Toodraw</p>
+                    <p class="fine-details">Category: Other</p></div>
+
+                    <div class="desc">
+                        <p>Got bored. Drew mountains. Nothing else to say.</p>
+                    </div>
+
+                    <div class="comm">
+                        <table width="100%">
+                            <tr height="10%">
+                                <td width="100%">Comments:<br><br></td>
+                            </tr>
+                            <tr height="50%">
+                                <td></td>
+                            </tr>
+                            <tr height="40%">
+                                <td width="100%">
+                                    <textarea class="comm-Box" name="comm5" id="comm5" rows="4" placeholder="Submit a comment..."></textarea>
+                                     <input type="submit" class="comm-Sub">
+                                </td>
+                            </tr>
+                        </table> 
+                    </div>
+
+                </div>
+
+                <div class="grid">
+
+                    <div class="divider" id="sub6">
+                        <h1>-----Your Submission-----</h1>
+                    </div>
+
+                    <div class="piece"><h3>Submit your work!<br>
+                                    Your piece has a chance to be featured!</h3>
+                                <img src="questionmark.png" alt="question mark" width="50%"></div>
+
+                    <div class="name"><h3 class="art-title"><em>Your Piece</em></h3>
+                    <p class="author">by Your Name</p>
+                    <p class="fine-details">Category: You Choose!</p></div>
+
+                    <div class="desc">
+                        <p>What is your piece about?</p>
+                    </div>
+
+                    <div class="comm">
+                        <table width="100%">
+                            <tr height="10%">
+                                <td width="100%">Comments on your work:<br><br></td>
+                            </tr>
+                            <tr height="50%">
+                                <td></td>
+                            </tr>
+                        </table> 
+                    </div>
+
+                </div>
+                
+            </main>
+
+            <aside>
+                <h3>Submit your work!</h3>
+                <p>Fill out the form below to post your own submission!</p>
+                <form method="post" action="/">
+                <fieldset class="name-field">
+                    <legend>Name Information</legend>
+        
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="firstName" required><br>
+
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" name="middleName"><br>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="lastName" required><br>
+
+                    <label for="piece-name">Name of Piece:</label>
+                    <input type="text" id="piece-name" name="pieceName" required><br>
+
+                    <label for="piece-url">URL of Piece:</label>
+                    <input type="text" id="piece-url" name="url" required><br>
+                </fieldset>
+
+                <fieldset class="piece-field">
+                    <legend>Art Information</legend>
+        
+                    <p>Select the type of art that most closely matches your piece:</p>
+                    
+                    <div class="radios">
+                        <span>
+                            <input type="radio" name="pieceType" value="Renaissance" id="ren">
+                            <label for="ren">Renaissance</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="pieceType" value="Surrealism" id="surr">
+                            <label for="surr">Surrealism</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="pieceType" value="Art-Nouveau" id="nov">
+                            <label for="nov">Art&nbspNouveau</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="pieceType" value="Cubism" id="cube">
+                            <label for="cube">Cubism</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="pieceType" value="Impressionism" id="imp">
+                            <label for="imp">Impressionism</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="pieceType" value="Abstract" id="abs">
+                            <label for="abs">Abstract</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="pieceType" value="Contemporary" id="con">
+                            <label for="con">Contemporary</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="pieceType" value="Other" id="other">
+                            <label for="other">Other</label>
+                        </span><br><br>
+                    </div>
+
+                    <label for="art-Desc">Description:</label>
+                    <textarea name="description" id="art-Desc" rows="4" cols="40" placeholder="Describe your piece..."></textarea>
+                    
+                    <input type="submit" value="Submit">
+
+                </fieldset>
+            </form>
+            </aside>
+        </div>
+
+       <!-- <footer>Footer</footer> -->
+    </body>
+</html>
