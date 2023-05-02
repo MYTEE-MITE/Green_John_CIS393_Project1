@@ -7,7 +7,7 @@ const app = express();
 
 // Serve static files from the public dir
 app.use(express.static("public"));
-//app.use(morgan('dev')); //logs HTTP request in the console
+
 app.use(express.urlencoded({ extended: false })); //parses URL-encoded data
 
 const morgan = require('morgan');
