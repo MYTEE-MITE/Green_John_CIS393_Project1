@@ -11,4 +11,7 @@ To use the site:
 Thanks for the help last Monday, I gave this assignment as much time
 as I could, but I had 3 different semester-long assignments all due towards the end of
 April (one of which involved organizing an annual Peoria-wide event) and I couldn't
-allocate as much time as I wanted to with this assignment.
+allocate as much time as I wanted to with this assignment. That said, the site 
+does everything I planned for it to do since project 1 and everything present is 
+functional (apart from the comment boxes, which were mainly for show). Thanks
+again for your help and understanding!
