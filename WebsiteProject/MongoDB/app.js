@@ -10,6 +10,11 @@ app.use(express.static("public"));
 //app.use(morgan('dev')); //logs HTTP request in the console
 app.use(express.urlencoded({ extended: false })); //parses URL-encoded data
 
+const morgan = require('morgan');
+app.use(morgan('dev'));
+
+app.set('view engine', 'ejs');
+
 const artPostSchema = new mongoose.Schema({
     firstName: { type: String, required: true },
     middleName: { type: String, required: false },
@@ -22,24 +27,24 @@ const artPostSchema = new mongoose.Schema({
 
 const ArtPost = mongoose.model("ArtPost", artPostSchema);
 
-app.post("/", async(req, res) => {
-    const art = new ArtPost({
+
+
+app.post("/portfolio", function(req, res) {
+    const art = {
         firstName: req.body.firstName,
         middleName: req.body.middleName,
         lastName: req.body.lastName,
         pieceName: req.body.pieceName,
         url: req.body.url,
         pieceType: req.body.pieceType,
-        descrption: req.body.pieceType
-    });
+        description: req.body.description}
+    res.render("home",{art:art});
+});
 
-    try {
-        const result = await art.save();
-        console.log(result);
-        res.send("The art piece with url " + result.url + "is inserted");
-    } catch (err) {
-        console.log(err);
-    }
+app.get("/", function(req, res){
+    console.log("f");
+    //res.send("default response");
+    //res.render('home.ejs');
 });
 
 app.listen(8080, function() {
